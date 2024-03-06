@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const About = () => {
     return (
         <div>
+            <Navbar />
             <h1>A propos</h1>
             <br />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -26,6 +29,7 @@ const About = () => {
                  Aut minima reiciendis, sapiente necessitatibus odit impedit, 
                  consequuntur similique explicabo quisquam natus cumque pariatur, 
                 sequi dicta ipsam totam? Minus consequatur culpa recusandae quas doloremque adipisci?</p>
+                <Footer />
         </div>
     );
 };

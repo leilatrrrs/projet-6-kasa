@@ -1,0 +1,30 @@
+.banner{
+    position: relative;
+    max-width: 95%;
+    height: 223px;
+    background-image: url(../../public/img/banner.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 80px 30px 88px;
+    border-radius: 25px;
+    opacity: 90%;
+    display: grid;
+    align-items: center;
+    & h2{
+        color: white;
+        text-align: center; 
+        font-size: 48px;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        opacity: 0.9;
+    }
+}
+
+.banner::before{
+    position: absolute;
+    content: '';
+    inset: 0;
+    border-radius: 25px;
+    opacity: 0.7;
+    background-color:black
+}

@@ -1,0 +1,56 @@
+.accomodation-header{
+    display: flex;
+}
+.accomodation-tags   {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px,150px)) ;
+        span{
+        flex-direction: row;
+        background-color: #ff6060;
+        color: white;
+        border-radius: 10px;
+        margin-right: 10px;
+        width:115px;
+        height: 25px;
+        padding-top: 0.3em ;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.accomodation-owner {
+    margin-left: auto;
+    h3 {
+        display: grid;
+        place-items: end;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 18px;
+    }
+}
+.accomodation-owner-badge{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: #646464;
+}
+
+.accomodation-owner-details {
+    display: flex;
+    gap:10px;
+}
+
+.accomodation-owner-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: larger;
+   .on {
+    color: #ff6060;
+   } 
+   .off{
+    color: grey;
+   }
+}

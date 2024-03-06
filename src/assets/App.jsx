@@ -1,9 +1,12 @@
-import Navbar from ".components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
+
+
 
 function App() {
     return (
-        <div>
-            <Navbar />
+        <div className="app">
+         
+            
         </div>
     );
 }

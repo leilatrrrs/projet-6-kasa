@@ -1,0 +1,24 @@
+.accomodation-desc {
+    margin-top: 20px;
+    .desc-header{
+    display: flex;
+    background-color: #ff6060;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0.7em 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+    .desc-content {
+    background-color: #f6f6f6;
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    border-radius:5px ;
+    position: relative;
+    top: -8px;
+    z-index: -1;
+    }
+}
