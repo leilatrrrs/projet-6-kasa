@@ -1,5 +1,8 @@
 .accomodation-header{
     display: flex;
+    @media  (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .accomodation-tags   {
         display: grid;
@@ -19,7 +22,14 @@
 }
 
 .accomodation-owner {
-    margin-left: auto;
+    margin-left: auto;        
+    @media (max-width:768px){
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        margin-left: 0;
+        justify-content: space-between;
+    }
     h3 {
         display: grid;
         place-items: end;

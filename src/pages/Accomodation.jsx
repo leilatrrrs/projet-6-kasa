@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AppartmentDesc from '../components/AppartmentDesc';
-import AccomodationBanner from '../components/AccomodationBanner';
+import ImageBanner from '../components/ImageBanner';
 import AccomodationHeader from '../components/AccomodationHeader';
 
 function Accomodation () {
@@ -10,7 +10,7 @@ function Accomodation () {
         <div>
             <Navbar/>
             <div className='accomodation-page'>
-               <AccomodationBanner />
+               <ImageBanner />
                     <AccomodationHeader />
                    <div className="accomodation-desc-area">
                         <AppartmentDesc />

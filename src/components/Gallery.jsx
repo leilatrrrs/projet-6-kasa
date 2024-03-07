@@ -1,17 +1,17 @@
 import React from 'react';
-import "../styles/appartement.scss"
-import Appartement from './Appartement';
+import "../styles/accomodationcard.scss"
+import AccomodationCard from './AccomodationCard';
+
 
 function Gallery()  {
     return (
         <div className='grid'>
-           <Appartement/>
-           <Appartement/>
-           <Appartement/>
-           <Appartement/>
-           <Appartement/>
-           <Appartement/>
-          
+         < AccomodationCard />
+         < AccomodationCard />
+         < AccomodationCard />
+         < AccomodationCard />
+         < AccomodationCard />
+         < AccomodationCard />
         </div>
     );
 };

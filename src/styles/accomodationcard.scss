@@ -1,6 +1,6 @@
 .appartement{
     background-color: #ff6060  !important;
-    border-radius:10px ;
+    border-radius:10px;
     width: 340px;
     height: 340px;
     margin: 30px;
@@ -11,6 +11,9 @@
     & a{
     text-decoration: none;
         }
+}
+.accomodation-card-image  img {
+   border-radius: 10px 10px 0 0  ;
 }
 
 .appartement-desc {
