@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "../styles/accomodationcard.scss"
 import AccomodationCard from './AccomodationCard';
 
 
-function Gallery()  {
+
+function Gallery() {
+    const [apartments, setApartments] = useState([]);
+
+    useEffect(fetchApartments, [])
+
+    function fetchApartments() {
+    fetch("data.json")
+        .then((response) => response.json())
+        .then((response) => setApartments(response))
+        .catch(console.error)
+}
     return (
         <div className='grid'>
-         < AccomodationCard />
-         < AccomodationCard />
-         < AccomodationCard />
-         < AccomodationCard />
-         < AccomodationCard />
-         < AccomodationCard />
+            {apartments.map ((apartment) => (
+             <AccomodationCard title={apartment.title} imageUrl={apartment.cover}/>
+            ))}
+           
         </div>
     );
-};
+}
 
 export default Gallery;
+

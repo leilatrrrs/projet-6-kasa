@@ -3,16 +3,14 @@ import "../styles/gallery.scss"
 import {NavLink} from "react-router-dom";
 import "../styles/accomodationcard.scss"
 
-export function  AccomodationCard  () {
-    return (
+export function  AccomodationCard  (props) {
+    return (  
+    <NavLink to="/Accomodation" >
         <div className='appartement'>
-            <NavLink to="/Accomodation" >
-                <div className="accomodation-card-image">
-                    <img src="https://picsum.photos/340/285" alt="image appartement" />
-                </div>
-            <div className='appartement-desc'>Titre de la location</div>
-            </NavLink>
+            <img src={props.imageUrl} alt="" />
+            <div className='appartement-desc'>{props.title}</div>
         </div>
+        </NavLink>
     );
 };
 
