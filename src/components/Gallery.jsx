@@ -18,7 +18,7 @@ function Gallery() {
     return (
         <div className='grid'>
             {apartments.map ((apartment) => (
-             <AccomodationCard title={apartment.title} imageUrl={apartment.cover}/>
+             <AccomodationCard title={apartment.title} imageUrl={apartment.cover} id={apartment.id}/>
             ))}
            
         </div>
