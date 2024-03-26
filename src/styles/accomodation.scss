@@ -1,16 +1,20 @@
 .accomodation-page {
     color: #ff6060;
     position: relative;
-    width: 88%;
+    width: 91%;
     height: 100%;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 136px;
     border-radius: 25px;
     overflow: hidden;
+
+    @media (max-width:1168px) {
+        margin-inline: auto;
+    }
     @media (max-width:768px){
-        margin-right: 20px;
-        margin-left: 50px;
+        margin-left: 15px;
+        width: 95%;
     }
     h1{
         font-weight:500 ;

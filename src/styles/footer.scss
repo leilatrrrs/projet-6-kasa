@@ -6,7 +6,11 @@
     align-items: center;
     justify-content: center;
     gap: 21px;
-    height: 209px;
+    height: 282px;
     margin-top: 50px;
+    @media (max-width:768px){
+        margin-top: 105px;
+        height: 300px;
+    }
 }
 

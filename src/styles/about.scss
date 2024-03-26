@@ -1,1 +1,25 @@
-.about {margin-inline: 80px;}
+.about {
+    margin-bottom: 18%;
+    @media (max-width:768px) {
+        margin-bottom: -20px;
+    }
+}
+
+.about .accomodation-desc {
+    margin-inline: 80px;
+    @media (max-width:768px) {
+        width: 95%;
+        margin-left: 15px;
+    }
+}
+
+.about .banner {
+    margin-bottom: 74px;
+    @media (max-width:768px) {
+        height: 200px ;
+        margin-bottom: 30px;
+    }
+}
+.about .banner::before{
+    opacity: 0;
+}

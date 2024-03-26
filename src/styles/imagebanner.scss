@@ -19,6 +19,12 @@
             left: 0;
         }
         }
+    }.slider{
+    width: 100%;
+    bottom: 25px;
+    position: absolute;
+    color: white;
+    text-align: center;
     }
 }
     
@@ -34,4 +40,4 @@
     &.show{
         opacity: 1;
     }
-}  
+}

@@ -2,22 +2,20 @@ import React, { useState } from 'react';
 import "../styles/appartmentdesc.scss";
 
 export default function AppartmentDesc(props) {
-    const [isContentVisible, setIsContentVisible] = useState(true);
-
-    const showContent = () => {
+    const [isContentVisible, setIsContentVisible] = useState(true); 
+    const toggleContent = () => {
         setIsContentVisible(!isContentVisible);
     };
 
-    const contentClass = (isContentVisible ? "visible" : "hidden") + " desc-content";
-    const chevronClass = (isContentVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas";
-
     return (
         <div className="accomodation-desc">
-            <p className="desc-header" onClick={showContent}>
+            <div className={`desc-header ${isContentVisible ? '' : 'collapsed'}`} onClick={toggleContent}>
                 <span>{props.title}</span>
-                <i className={chevronClass}></i>
+                <i className={`fas fa-chevron-${isContentVisible ? 'up' : 'down'}`}></i>
+            </div>
+            <p className={isContentVisible ? "visible desc-content" : "hidden desc-content"}>
+                         {props.content}
             </p>
-            <p className={contentClass}>{props.content}</p>
         </div>
     );
 }

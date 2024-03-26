@@ -7,14 +7,13 @@ import Footer from '../components/Footer';
 const Home = () => {
     return (
         <div>
-                <Navbar/>
+            <Navbar/>
                 <main>
-               <Banner/>
-               <Gallery/>
+                    <Banner isHomePage={true}/>
+                    <Gallery/>
                 </main>
-                <Footer/>
+            <Footer/>
         </div>
     );
 };
-
 export default Home;

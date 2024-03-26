@@ -1,14 +1,12 @@
 .accomodation-desc {
-    margin-top: 20px;
     flex-basis: 50%;
     overflow: hidden;
+    margin-bottom: 10px;
     p{
-        margin-block: 0;
         list-style-type: none;
         color: black;
-        padding: 10px; 
+        padding: 20px; 
     }
-    
     .desc-header{
     display: flex;
     background-color: #ff6060;
@@ -18,35 +16,44 @@
     padding: 0.7em 1rem;
     justify-content: space-between;
     cursor: pointer;
-       }
-    
+    margin-bottom: 10px;
+      .desc-header .fa-chevron-up,
+      .desc-header .fa-chevron-down {
+        font-size: 25px;
+        height: 13px;
+        width: 24px;
+        color: white;
+      }
+      .fa-chevron-up {
+        transform: rotate(-360deg); transition: transform 0.3;
+      }
+      .fa-chevron-down {
+        transform: rotate(-0deg); transition: transform 0.3s; 
+      }
+  }
+
     .desc-content {
     background-color: #f6f6f6;
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 100;
-    padding: 20px;
     border-radius:5px ;
     position: relative;
     top: -8px;
+    text-align:left ;
     z-index: -1;
     list-style-type: none;
     transition: transform 0.3s ease-in-out;
     &.hidden {
       transform: translateY(0);
+      transition: transform 0.3s;
+      width: auto;
+      height: auto;
     }
     &.visible {
       transform: translateY(-180%);
+      transition: transform 0.3s;
+      margin-top:-70px; 
     }
   }
-
-  
-.accomodation-desc .desc-header .fa-chevron-up,
-    .accomodation-desc .desc-header .fa-chevron-down {
-      font-size: 25px;
-        height: 13px;
-        width: 24px;
-        color:white;
-}
-
 }
