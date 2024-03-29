@@ -49,11 +49,14 @@
       transition: transform 0.3s;
       width: auto;
       height: auto;
+      margin-top: 10px;
     }
     &.visible {
       transform: translateY(-180%);
       transition: transform 0.3s;
-      margin-top:-70px; 
-    }
+      margin-top:-90px; 
+      height: 60px;
   }
+
+}
 }

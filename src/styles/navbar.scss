@@ -7,10 +7,14 @@
     @media (max-width:768px) {
         text-transform: uppercase;
         font-weight:500px ;
-        font-size: 17px;
+        font-size: 14px;
         margin-inline: 9px;
-        gap: 20px;
+        gap: 10px;
         margin-right: 0px;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
     }
     & a {
         padding-right: 20px;
@@ -24,11 +28,17 @@
                 }         
         @media (max-width:768px) {
         padding-right: 15px;
+        flex-wrap: nowrap;
+        height: 10px;
         }
         }     
         & img{
-        width: 180px ;
-        height: 68px;
+            width: auto;
+            height: auto;
+            @media (max-width:768px) {
+                width: 145px ;
+                height: 55px;
+            }
     } 
 }
 
@@ -40,8 +50,12 @@
     color: black;
     padding-top: 25px;
     gap: 25px;
-   @media (max-width:768px) {
-    flex-wrap: wrap;
+    font-size: 24px;
+    @media (max-width:768px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 12px;
+        font-weight: 500;
    }
 }
 
